@@ -1,17 +1,17 @@
 <html>
 <head>
-	<title>카카오톡 버튼있는 메시지 전송하기</title>
+	<title>카카오톡 가짜 기프티콘 전소</title>
 <script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body>
-	<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong> By. Blackcats4567</p>
+	<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong></p>
 <a id="kakao-link-btn" href="javascript:sendLink()">
   <img
     src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
   />
 </a>
 <script type="text/javascript">
- Kakao.init('3952c842a3ffe064b6724c6e293e7e2e');
+ Kakao.init('fecdac7424bc234b1c117ef40bfe6e28');
   function sendLink() {
     Kakao.Link.sendDefault({
       objectType: 'feed',
@@ -19,7 +19,7 @@
         title: '이런 버튼있는 메시지',
         description: '이런 메시지를 보내고 싶다고요? 아래 버튼을 눌러 방법을 알아보세요',
         imageUrl:
-          'https://mblogthumb-phinf.pstatic.net/MjAyMjAyMjVfMjkw/MDAxNjQ1Nzk1ODQ3NDE1.EG0h4ZYaYl1KrWnfwxGT4b6T0mY3J-GjV2YoyPqy7Aog.C4d4Ng9RWyCLDDPEXaAbuobgIFRRU20KmpMQvZmYQKYg.JPEG.happydm09/1645795800559.jpg?type=w800',
+          'https://mblogthumb-phinf.pstatic.net/MjAyMjAyMjZfMTE1/MDAxNjQ1ODgxNzg3NTcx.DUlyDDveVl2pxpQo7XBR5NVi_5m8nK5I0buAmWxCUWUg.vCZY8f3_9Pn6jV4UQCY_uRac3b3oSKRHeq-IF3BwLMEg.JPEG.happydm09/1645881728584.jpg?type=w800',
         link: {
           mobileWebUrl: 'https://youtu.be/BpAe8d-CXKk',
           webUrl: 'https://youtu.be/BpAe8d-CXKk',
@@ -27,7 +27,14 @@
       },
       buttons: [
         {
-          title: '지금 바로 알아보기',
+          title: '선물함으로 가기',
+          link: {
+            mobileWebUrl: 'https://youtu.be/BpAe8d-CXKk',
+            webUrl: 'https://youtu.be/BpAe8d-CXKk',
+          },
+        },
+	  {
+          title: '감동카드 보내기',
           link: {
             mobileWebUrl: 'https://youtu.be/BpAe8d-CXKk',
             webUrl: 'https://youtu.be/BpAe8d-CXKk',
